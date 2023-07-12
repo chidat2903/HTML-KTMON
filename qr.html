@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhận mã Nuôi em</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Css Styles-->
+    <link rel="stylesheet" href="qr.css">
+    <!--Java script-->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <nav id="navbar">
+                <a href="index.html"><img src="img/logo-asnr-NuoiEm.png"></a>
+                <div class="nav-link" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul id="menu">
+                        <li><a href="">About <i class="fa fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="">Trang chủ</a></li>
+                                <li><a href="">Tin Bài</a></li>
+                                <li><a href="">Xây Trường</a></li>
+                                <li><a href="">Nhận Mã</a></li>
+                                <li><a href="">Thăm Em</a></li>
+                                <li><a href="">Tra Mã</a></li>
+                                <li><a href="">Số Tài Khoản</a></li>
+                                <li><a href="">Hệ Sinh Thái</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Shop</a></li>
+                        <a href="" class="hero-btn" style="background: #ff931a;">Đăng nhập</a>
+                        <a href="" class="hero-btn" style="background: #ec6a12;">Đăng ký</a>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="huongdan">
+            <div class="text-hd">
+                <h1>Cảm ơn anh chị đã đồng hành cùng dự án Nuôi em</h1>
+                <p>QUY TRÌNH NÀY SẼ TIẾP TỤC KHI ANH CHỊ ĐÃ CÓ MÃ EM NUÔI</p>
+                <p>Xin mời đọc tổng quan 6 bước và làm theo hướng dẫn</p>
+            </div>
+            <div class="img-hd">
+                <img src="img/screenshot_1688708890.png" alt="">
+            </div>
+        </div>
+    </div>
+        <div class="code-box">
+            <h1>Nhận mã Nuôi em<br><span>Thông tin về Em bé</span></h1>
+            <div class="display">
+                <input type="text" id="code" placeholder="Mã Nuôi em">
+                <i class='fa fa-copy fa-lg' style='color:#fff' onclick="copyCode()"></i>
+            </div>
+            <button onclick="createCode()"><i class='fa fa-flash fa-lg' style='color:#ffc107'></i>Lấy Mã</button>
+        </div>
+        <div class="QR-BOX">
+            <div class="qr-box">
+                <h1>Nhập mã của bạn</h1>
+                <p>Và nhận mã QR để xem thông tin <br> chuyển khoản và thông tin Em nuôi</p>
+                <input type="text" placeholder="Text or URL" id="qrText">
+    
+                <div id="imgBox">
+                    <img src="" id="qrImage">
+                </div>
+                <button onclick="generateQR()">Tạo Mã QR</button>
+            </div>
+        </div>
+
+        <div class="img-danhsach">
+            <img src="img/scr-qr.png" alt="">
+        </div>
+        
+        <div class="footer">
+            <div class="row-footer">
+                <div class="col">
+                    <img src="img/logo-asnr-NuoiEm.png" class="logo">
+                    <p>Dự án Nuôi Em - Nuôi cơm trưa có thịt cho trẻ em bản cao - 
+                        mỗi em nhỏ có 1 người nuôi với chỉ 150,000/tháng điều hành 
+                        bởi Hoàng Hoa Trung - Forbes Việt Nam 30Under 30 đồng hành
+                         bởi Trung tâm Tình Nguyện Quốc Gia.</p>
+                         <br>
+                    <p>Phát triển bởi đội ngũ điều hành Ánh Sáng Núi Rừng và Dự án Nuôi Em.</p>
+                </div>
+                <div class="col">
+                    <h3>LIÊN HỆ</h3>
+                    <p>P702 - 62 Bà Triệu - TW Đoàn.</p>
+                    <p>P. Trần Hưng Đạo - Q. Hoàn Kiếm - TP Hà Nội.</p>
+                    <p>Điện thoại: 0975 302 307</p>
+                    <p class="email-id">Email : niemtingroup@gmail.com</p>
+                    <div class="social-icon">
+                        <a href=""><i class='fa fa-facebook fa-3x' ></i></a>
+                        <a href=""><i class='fa fa-instagram fa-3x'></i></a>
+                        <a href=""><i class='fa fa-twitter fa-3x'></i></a>
+                        <a href=""><i class='fa fa-google fa-3x'></i></a>
+                    </div>
+                </div>
+                <div class="col" id="links">
+                    <h3>Đường dẫn</h3>
+                    <ul>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Số tài khoản</a></li>
+                        <li><a href="">Truyền thông</a></li>
+                        <li><a href="">Hệ sinh thái</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Góp ý với chúng tôi</h3>
+                    <form class="form-footer">
+                        <i class='fa fa-envelope fa-lg' style='color:#fff'></i>
+                        <input type="email" id="email-footer" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="fa fa-arrow-right"></i></button>
+                    </form>
+                    <div class="companion">
+                        <h1>ĐƠN VỊ TRIỂN KHAI</h1>
+                        <div class="donvi1">
+                            <img src="img/Logo-Doan-Thanh-NIen-Cong-San-Ho-Chi-Minh-1.webp" alt="">
+                            <img src="img/logo-vvc-final-2.png" style="width: 81.5px;height: 50px;" alt="">
+                            <img src="img/fl1-2-1.png" style="width: 75px;height: 50px;" alt="">
+                        </div>
+                        <h1>ĐƠN VỊ BẢO TRỢ</h1>
+                        <div class="donvi2">
+                            <img src="img/logo5.png" style="width: 85.9px; height: 50px;background: #fff; padding: 5px; border-radius: 5px;" alt="">
+                            <img src="img/logo-momo.webp" alt="">
+                            <img src="img/14.-thanh-nien.png" style="width:80px; height: 50px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="qr.js"></script>
+    </div>
+</body>
+</html>

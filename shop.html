@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuôi Em Website</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Css Styles-->
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-asnr-NuoiEm.png" alt=""></a>
+            </div>
+            <ul>
+                <li class="active"><i class="fa fa-home"></i> Home</li>
+                <li><i class="fa fa-user"></i> User</li>
+                <li><i class="fa fa-heart"></i> Favourite</li>
+            </ul>
+             <ul>
+                <li><i class="fa fa-facebook"></i> Facebook</li>
+                <li><i class="fa fa-twitter"></i> Twitter</li>
+                <li><i class="fa fa-instagram"></i> Instagram</li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <h2>PRODUCTS</h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="img/aophong.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 1</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">300.000đ</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="img/aophonghong.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 2</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">200.000đ</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="img/aophongvang.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 3</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">250.000đ</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+                
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="img/aophongxanh.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 4</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">270.000đ</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="cart">
+            <div class="name">CART</div>
+            <div class="listCart">
+                <a href="index.html">
+                    <button class="dathang" name="btndathang">Đặt hàng</button>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="shop.js"></script>
+</body>
+</html>

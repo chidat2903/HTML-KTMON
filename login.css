@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,rgba(77, 30, 3, 0.7),rgba(6, 3, 54, 0.7)),url(img/photo-1-162510728167472767437.webp);
+    background-position: center;
+    background-size: cover;
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+}
+.logo{
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+}
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #cacaca;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.field button{
+    color: #fff;
+    background: #ea4335;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    color: #fff;
+    background: #ea4335;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.form a{
+    color:  #ea4335;
+    text-decoration: none;
+    padding-left: 5px;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #ea4335;
+}
+.line::before{
+    content: 'Hoặc';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    color: #232836;
+    padding: 0 15px;
+}
+.media-options a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.facebook{
+    color: #fff;
+    background: #1778f2;
+}
+a.facebook .fa-facebook{
+    height: 28px;
+    width: 28px;
+    color: #1778f2;
+    font-size: 20px;
+    border-radius: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.fa-facebook,
+img.google-img,
+.fa-apple,
+.fa-twitter{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+a.google{
+    border: 1px solid #CACACA;
+}
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
+a.apple{
+    color: #fff;
+    background: #000;
+}
+a.apple .fa-apple{
+    height: 28px;
+    width: 28px;
+    color: #000;
+    font-size: 20px;
+    border-radius: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+a.twitter{
+    color: #fff;
+    background: #3190ee;
+}
+a.twitter .fa-twitter{
+    height: 28px;
+    width: 28px;
+    color: #3190ee;
+    font-size: 20px;
+    border-radius: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+@media screen and (max-width: 400px){
+    .form{
+        padding: 20px 10px;
+    }
+}
